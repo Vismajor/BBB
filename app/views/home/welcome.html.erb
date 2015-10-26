@@ -1,0 +1,14 @@
+<h1 align="center">3B</h1>
+<h2 align="center">Black Baked Beanz</h2>
+<h3 align="center">You need caffeine - we have sales targets</h3>
+
+<%= form_tag(search_path, method: :get) do %>
+
+<p align="center">Get the black gold faster, enter a search term:</p>
+<div align="center">
+<%= text_field_tag :option %>
+<%= submit_tag "Brew!" %>
+</div>
+<p align="center">For extra fun, search "oldelaf"!</p> 
+
+<% end %>

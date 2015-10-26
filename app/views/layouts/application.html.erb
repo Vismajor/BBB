@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BbbApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div>
+<%= link_to "home", root_path %>
+<%= link_to "products", products_path %>
+<%= link_to "cafe", cafe_path %>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
